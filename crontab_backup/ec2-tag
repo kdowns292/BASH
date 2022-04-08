@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#This script will grab the tag Name in AWS associated with the current server you're on
+
 if [ -z $1 ]; then
     scriptName=`basename "$0"`
     echo  >&2 "Usage: $scriptName <tag_name>"
