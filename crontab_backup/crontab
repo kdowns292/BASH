@@ -1,0 +1,2 @@
+#This entry would be put in the crontab. The % sign needs to be escaped otherwise crontab will truncate the command and not run
+30 23 * * * aws s3 cp /var/spool/cron/root  s3://`aws s3 ls | grep crontab | awk {'print $3'}`/cron-`date +"\%Y-\%m-\%d"`-`/usr/bin/ec2-tag Name`
