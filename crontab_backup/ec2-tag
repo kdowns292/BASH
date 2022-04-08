@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#This script will grab the tag Name in AWS associated with the current server you're on
+#This script will grab the tag Name in AWS associated with the current server you're on. Permissions will need to be 755
 
 if [ -z $1 ]; then
     scriptName=`basename "$0"`
