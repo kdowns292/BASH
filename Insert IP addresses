@@ -1,0 +1,1 @@
+for i in {34..46}; do mysql -<db DNS name> -u<username> -p<password> -e “insert into admin_ips (ip, description)values(\“186.176.208.$i\“, \“<description>\“)”; done
